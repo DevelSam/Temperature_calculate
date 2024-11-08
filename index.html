@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Style.css">
+</head>
+<body>
+    <div  class="temperatura">
+        <h3 class="title-temperatura">Температурный конвертер</h3>
+        <p>Введите температуру и подсчитайте</p>
+        <input maxlength="999" type="number" id="temperatura" class="temperature-value">
+        <select name="from-to" class="from-to" id="from">
+            <option value = "" selected disabled hidden>Из </option>
+            <option value="Farengeit">Фаренгейт</option>
+            <option value="Chelsia" >Цельсия</option>
+            <option value="Kelvin">Кельвин</option>
+        </select>
+        <select name="To-unit" class="To-unit" id="To">
+            <option value="" selected disabled hidden>В </option>
+            <option value="Farengeit">Фаренгейт</option>
+            <option value="Chelsia" >Цельсия</option>
+            <option value="Kelvin">Кельвин</option>
+        </select>
+        <button onclick="DisplayResult()" id="convert" class="button">конвертировать</button>
+        <p id="result"></p>
+    </div>
+    <script src="./Index.js"></script>
+</body>
+</html>
